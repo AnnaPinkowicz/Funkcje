@@ -25,7 +25,7 @@ class BaseContact:
         return self.phone
 
     @property
-    def namelength(self):
+    def label_length(self):
         return len(self.firstname + ' ' + self.lastname)
 
 
@@ -76,5 +76,5 @@ def create_contacts(amount, kind):
 
 for card in create_contacts(5, BaseContact):
     print(card.contact())
-    print(card.namelength)
+    print(card.label_length)
     print("------------------------")
